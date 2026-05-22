@@ -20,5 +20,3 @@ rl.question('You: ', async (userInput) => {
   console.log(`\nPATCH: ${data.response}`);
   rl.close();
 });
-
-//testing new push method.
