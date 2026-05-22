@@ -11,13 +11,13 @@ This is also a portfolio project spanning mechanical engineering, electrical sys
 
 PATCH is built around four parts:
 
-**SMS Accountability** — Sends and receives SMS through your own phone number. Proactive check-ins, goal tracking, and conversational memory via a local LLM.
+**SMS Accountability** — Sends and receives SMS through my own phone number. Proactive check-ins, goal tracking, and conversational memory via a local LLM run on Raspberry Pi 5.
 
-**Personal CRM** — A local database of contacts, relationships, and interaction history. PATCH surfaces context before meetings and reminds you to follow up.
+**Personal CRM** — A local database of contacts, relationships, and interaction history. PATCH surfaces context before meetings and reminds me to follow up with connections, clients, etc.
 
-**Knowledge Integration** — Reads Obsidian vault notes and Snipd podcast highlights directly from the filesystem. Delivers daily and weekly digests via SMS, pulling relevant ideas based on what you're currently working on.
+**Knowledge Integration** — Reads Obsidian vault notes and Snipd podcast highlights directly from the filesystem. Delivers daily and weekly summaries via SMS, pulling relevant ideas based on what I'm currently working on.
 
-**Automation Framework** — A general-purpose task runner for anything else. Custom Node.js scheduler with cron for time-based tasks and event-driven hooks for reactive ones.
+**Automation Framework** — A general task system for ongoing projects and new automations.
 
 ---
 
@@ -25,15 +25,15 @@ PATCH is built around four parts:
 
 | Component | Using |
 |---|---|
-| Hardware | Raspberry Pi 5 |
-| LLM runtime | Ollama |
-| Model | Phi-3 Mini (Q4 quantized) |
-| SMS gateway | textbee.dev (Android, zero cost) |
+| Hardware | Raspberry Pi 5 8 GB|
+| LLM host | Ollama |
+| LLM Model | Phi-3 Mini (Q4 quantized) |
+| SMS gateway | Unsure (5.22.2026) |
 | Language | Node.js |
 | Storage | JSON files, SQLite as complexity grows |
 | Notes | Obsidian vault + Snipd exports (local markdown) |
 | Scheduling | cron + custom task runner |
-| Enclosure | Custom 3D printed, Flashforge Adventurer 5M |
+| Enclosure | Custom 3D printed, Flashforge Adventurer 5M, PETG |
 | Process manager | systemd |
 
 ---
@@ -41,10 +41,10 @@ PATCH is built around four parts:
 ## Status
 
 - [ ] Requirements document written
-- [ ] Ordered Hardware
-- [ ] GitHub repo set up
-- [ ] Ollama running locally on PC
-- [ ] First JS script hitting local Ollama API
+- [x] Ordered Hardware
+- [x] GitHub repo set up
+- [x] Ollama running locally on PC
+- [x] First JS script hitting local Ollama API
 - [ ] System architecture diagram
 - [ ] Enclosure designed and printed
 - [ ] Define automation constraints
@@ -53,7 +53,7 @@ PATCH is built around four parts:
 
 ## Why I built this
 
-I wanted a personal AI assistant with no token fees and no subscriptions. Everything runs locally on a Pi, routed through my own carrier for SMS, reading my own files for context. The hardware lives in a custom enclosure I designed and printed, which lets this double as a mechanical engineering portfolio piece alongside the software.
+I wanted a personal AI assistant with no token fees and no subscriptions. Everything runs locally on a Pi, routed through a phone for SMS, reading my own files for context. The hardware lives in a custom enclosure I designed and printed based on thermal outputs, parts' specific functions, and usage/accessibility.
 
 ---
 
