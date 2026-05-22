@@ -3,7 +3,7 @@
 
 PATCH is a self-hosted personal AI platform running on a Raspberry Pi 5. It started as an SMS accountability agent to help me stick to my running schedule. Over time, it grew into a system that handles automated reminders, knowledge management, personal CRM, and task automation, all running on local hardware with no ongoing API costs or subscriptions.
 
-This is also a portfolio project spanning mechanical engineering, electrical systems, JavaScript, and AI.
+This is also a portfolio project spanning mechanical engineering, embedded systems, JavaScript, and AI.
 
 ---
 
@@ -28,7 +28,7 @@ PATCH is built around four parts:
 | Hardware | Raspberry Pi 5 8 GB|
 | LLM host | Ollama |
 | LLM Model | Phi-3 Mini (Q4 quantized) |
-| SMS gateway | Unsure (5.22.2026) |
+| SMS gateway | TBD — evaluating ntfy.sh and Twilio |
 | Language | Node.js |
 | Storage | JSON files, SQLite as complexity grows |
 | Notes | Obsidian vault + Snipd exports (local markdown) |
@@ -53,7 +53,7 @@ PATCH is built around four parts:
 
 ## Why I built this
 
-I wanted a personal AI assistant with no token fees and no subscriptions. Everything runs locally on a Pi, routed through a phone for SMS, reading my own files for context. The hardware lives in a custom enclosure I designed and printed based on thermal outputs, parts' specific functions, and usage/accessibility.
+I wanted a personal AI assistant with no token fees and no subscriptions. Everything runs locally on a Pi, routed through a phone for SMS, reading my own files for context. The enclosure is custom-designed and printed in PETG, chosen over PLA for its higher glass transition temperature, given the Pi's thermal output under LLM inference.
 
 ---
 
